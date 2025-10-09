@@ -7,6 +7,7 @@ Corporate Trainer,
 Emails: banuprakashc@yahoo.co.in; banuprakash.cr@gmail.com
 
 https://www.linkedin.com/in/banu-prakash-50416019/
+
 https://github.com/BanuPrakash/SG_REACT
 
 Softwares Required:
@@ -115,5 +116,49 @@ webpackexample> npm i webpack webpack-cli webpack-dev-server html-webpack-plugin
 
 The HtmlWebpackPlugin simplifies creation of HTML files to serve your webpack bundles. This is especially useful for webpack bundles that include a hash in the filename which changes every compilation.
 
-index.html
-<script src="bundle.$dvsdf25.js"></script>
+
+
+npm install @babel/preset-react
+
+https://github.com/chentsulin/awesome-react-renderer
+
+=============
+
+react
+react-dom
+
+How to create a skelton/scaffolding code for react
+1) using webpack
+npx create-react-app sampleapp
+2) using vite
+npm create vite@latest
+customerapp
+react
+javascript
+
+Thinking in react:
+1) Atoms: UI components like button, image, label
+2) Molecules: grouping atoms like Card
+3) Organisms: Navbar
+4) Template: 
+5) Page
+
+mui / react-bootstrap / kendoUI / PrimeReact / Adobe Web Specturm
+
+```
+  src
+    features
+        products
+            ...
+        cart
+            ...
+        payment
+            ...
+    common
+        atoms
+            Button.jsx
+            Label.jsx
+        molecules
+            Card.jsx  
+
+```
