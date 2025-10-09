@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default function Filter() {
+export default function Filter(props) {
   return (
-    <div>Filter</div>
+    <input type="text" placeholder="search by name" onChange={(evt) => props.filterData(evt.target.value)}/>
   )
 }
