@@ -162,3 +162,25 @@ mui / react-bootstrap / kendoUI / PrimeReact / Adobe Web Specturm
             Card.jsx  
 
 ```
+
+React.createElement() -- Main API for JSX to JS
+functional Componenet: returns JSX -> React.createElement (99 % of code will be from React 16.8+)
+class Component -> render() returns JSX -> React.createElement
+
+===============
+
+Unit Testing React Components:
+JS Testing frameworks: Jasmine / Mocha / JEST / Vitest
+React Testing Library 
+
+npm i @testing-library/react @testing-library/dom -D
+
+RTL provides queries in screen object
+provides render() to render into Memory - No UI
+
+screen.debug() --> display DOM in console
+
+npm install  vitest -D
+npm install  jsdom -D
+
+
