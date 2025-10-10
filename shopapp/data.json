@@ -1,4 +1,14 @@
 {
+  "products": [
+    {
+      "id": "5ace",
+      "title": "Tata Play",
+      "price": "5600",
+      "image": "https://loremflickr.com/3761/3512?lock=6841820758330322",
+      "description": "Ergonomic Fish made with Bronze for all-day fat support",
+      "category": "electronics"
+    }
+  ],
   "customers": [
     {
       "id": "1",

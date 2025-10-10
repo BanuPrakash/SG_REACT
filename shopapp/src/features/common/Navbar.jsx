@@ -20,6 +20,9 @@ export default function Navbar() {
         Cart &nbsp;&nbsp;
         <Badge badgeContent={quantity} />
       </Link>
+       <Link to='/form' style={{textDecoration:'none', color:'white', paddingRight:'10px'}}>
+        Form
+      </Link>
     </Typography>
   </Toolbar>
 </AppBar>

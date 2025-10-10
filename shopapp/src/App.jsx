@@ -6,6 +6,7 @@ import ProductList from './features/products/ProductList'
 import Default from './features/common/Default'
 import { lazy } from 'react'
 import { Suspense } from 'react'
+import ProductForm from './features/products/ProductForm'
 
 // lazy loading
 const Cart = lazy (() => import('./features/cart/Cart'));
@@ -28,6 +29,7 @@ function App() {
             <Details />
            </Suspense>
          }></Route>
+          <Route path='/form' element={<ProductForm />}></Route> 
         <Route path='/' element={<ProductList />}></Route> 
         <Route path='*' element={<Default />}></Route> 
       </Routes>
