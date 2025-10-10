@@ -266,3 +266,21 @@ Component List:
 npm i react-router-dom @mui/material @emotion/react @emotion/styled
 npm i bootstrap
 
+====
+useReducer() hook has to be used instead of useState() if:
+1) state is complex
+2) conditionally mutate the state
+3) state mutation depends on previous state
+
+```
+    cart
+    {
+        "cartItems": [
+                {"id": 5, "title": "A", qty: 4},
+                 {"id": 1, "title": "T", qty: 1}
+        ],
+        total: 89891.33,
+        quantity: 2
+    }
+
+```
