@@ -286,3 +286,14 @@ useReducer() hook has to be used instead of useState() if:
 ```
 
 dispatch({"type": "ADD_TO_CART", "payload":  {"id": 5, "title": "A", qty: 4}})
+
+======
+
+FakeRESTful API
+npx json-server --watch data.json --port 1234
+
+npm i axios
+
+Prefer axios over fetch
+
+=======
