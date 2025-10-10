@@ -2,9 +2,15 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Navbar from './features/common/Navbar'
 import { Routes, Route, Link } from 'react-router-dom'
 import ProductList from './features/products/ProductList'
-import Cart from './features/cart/Cart'
-import Details from './features/products/Details'
+
 import Default from './features/common/Default'
+import { lazy } from 'react'
+import { Suspense } from 'react'
+
+// lazy loading
+const Cart = lazy (() => import('./features/cart/Cart'));
+const Details = lazy(() => import('./features/products/Details'));
+
 
 function App() {  
   return (
@@ -12,8 +18,16 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/products' element={<ProductList />}></Route>
-        <Route path='/cart' element={<Cart />}></Route>
-        <Route path='/details/:id' element={<Details />}></Route>
+        <Route path='/cart' element={
+          <Suspense fallback={<div>Loading Cart...</div>}>
+            <Cart />
+          </Suspense>
+        }></Route>
+        <Route path='/details/:id' element={
+           <Suspense fallback={<div>Loading Details...</div>}>
+            <Details />
+           </Suspense>
+         }></Route>
         <Route path='/' element={<ProductList />}></Route> 
         <Route path='*' element={<Default />}></Route> 
       </Routes>
