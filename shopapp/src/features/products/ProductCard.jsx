@@ -5,8 +5,12 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import React from 'react'
+import { CartContext } from '../../context/CartContextProvider';
 
 export default function ProductCard({product}) {
+  // Consumer
+  let {addToCart} = React.useContext(CartContext );
+
   let {id, title, price, description, image} = product;
 
   return (
@@ -28,7 +32,11 @@ export default function ProductCard({product}) {
       </CardContent>
       
       <CardActions>
-        <Button size="small">Add To Cart</Button>
+        <Button size="small" onClick={() => addToCart({
+          ...product,
+          qty: 1,
+          amount: price
+        })}>Add To Cart</Button>
     
       </CardActions>
     </Card>

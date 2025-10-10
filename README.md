@@ -284,3 +284,5 @@ useReducer() hook has to be used instead of useState() if:
     }
 
 ```
+
+dispatch({"type": "ADD_TO_CART", "payload":  {"id": 5, "title": "A", qty: 4}})

@@ -3,9 +3,12 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import { Link } from 'react-router-dom';
-
+import Badge from '@mui/material/Badge';
+import { useContext } from 'react';
+import { CartContext } from '../../context/CartContextProvider';
 
 export default function Navbar() {
+  let {quantity} =  useContext(CartContext);
   return (
   <AppBar position="static">
   <Toolbar variant="dense">
@@ -14,7 +17,8 @@ export default function Navbar() {
         Products
       </Link>
     <Link to='/cart' style={{textDecoration:'none', color:'white', paddingRight:'10px'}}>
-        Cart
+        Cart &nbsp;&nbsp;
+        <Badge badgeContent={quantity} />
       </Link>
     </Typography>
   </Toolbar>
