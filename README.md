@@ -237,3 +237,32 @@ React Hooks:
  }
 
 ```
+CSS Framework for RWD: npm i bootstrap
+=========
+
+React Context:
+React Context is a mechanism in React for sharing data that can be considered "global" to a tree of React components without explicitly passing props down at every level.
+
+Shopping Application:
+1) react-router-dom
+client side Routing
+Lazy loading of components
+
+2) React Context: for state management
+3) MUI
+4) bootstrap
+
+Component List:
+1) NavbarComponent
+2) ProductList
+3) ProductCard
+4) Details
+5) Default
+6) CartComp
+7) CartRow
+
+==========
+
+npm i react-router-dom @mui/material @emotion/react @emotion/styled
+npm i bootstrap
+
