@@ -184,3 +184,56 @@ npm install  vitest -D
 npm install  jsdom -D
 
 
+========
+npm i @vitest/coverage-v8
+
+npm i @testing-library/jest-dom -D
+
+vitest --coverage --coverage.inclue=src/*.jsx
+
+==============
+
+Mounting Phase:
+constructor () intialize
+render() -- Initial UI
+componentDidMount() --> API Call and update the state
+
+Updating Phase --> state changes
+shouldComponentUpdate() -> true -> render() -> componentDidUpdate()
+Make depedendent API calls
+Functional Components 
+====================
+
+React Hooks:
+1) useState()
+2) useEffect()
+3) useReducer()
+4) useRef()
+5) useContext()
+
+```
+ export default class Counter extends Component {
+    state = {
+        count: 0,
+        name: 'Roger'
+    }
+
+    setName(n) {
+        this.setState({
+            name: n
+        })
+    }
+
+    setCount(c) {
+        this.setState({
+            count: c
+        })
+    }
+    render() {
+        return (
+
+        )
+    }
+ }
+
+```
