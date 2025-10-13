@@ -7,6 +7,7 @@ import Default from './features/common/Default'
 import { lazy } from 'react'
 import { Suspense } from 'react'
 import ProductForm from './features/products/ProductForm'
+import ParentComponent from './trials/ParentComponent'
 
 // lazy loading
 const Cart = lazy (() => import('./features/cart/Cart'));
@@ -30,6 +31,7 @@ function App() {
            </Suspense>
          }></Route>
           <Route path='/form' element={<ProductForm />}></Route> 
+           <Route path='/parent' element={<ParentComponent />}></Route> 
         <Route path='/' element={<ProductList />}></Route> 
         <Route path='*' element={<Default />}></Route> 
       </Routes>

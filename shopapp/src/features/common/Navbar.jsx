@@ -21,7 +21,10 @@ export default function Navbar() {
         <Badge badgeContent={quantity} />
       </Link>
        <Link to='/form' style={{textDecoration:'none', color:'white', paddingRight:'10px'}}>
-        Form
+        Form &nbsp;&nbsp;
+      </Link>
+       <Link to='/parent' style={{textDecoration:'none', color:'white', paddingRight:'10px'}}>
+        Parent
       </Link>
     </Typography>
   </Toolbar>

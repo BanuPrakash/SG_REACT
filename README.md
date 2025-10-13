@@ -297,3 +297,89 @@ npm i axios
 Prefer axios over fetch
 
 =======
+
+Handling Forms:
+1) Controlled Components
+2) Uncontrolled Components
+
+npm install @faker-js/faker
+
+==============
+
+Multi Stage Processing of Form Data:
+
+{
+    "loginData": {
+        "email": "",
+        "password":""
+    },
+    "personal": {
+        "firstName":"",
+        "lastName": ""
+    },
+    "professional": {
+        "":
+    }
+}
+
+========================
+
+Recap:
+* NodeJS, webpack and vite [From FEB 2025]
+* Presets: babel/preset-env - syntax transform and polyfills
+@babel/preset-react: looks out for React.createElement
+
+React.createElement() takes JSX -> JS Object -> renderer [react-dom / react-native/ react-tv,..]
+
+npm create vite@latest to create react projects --> React 19 version
+npx create-react-app someapp to create react projects prior to react 19 version
+
+```
+* React.createElement() - JSX to JS object
+* class component extends Componet, override render()
+render() returns JSX -> React.createElement() - JS object
+* functional component --> JSX -> React.createElement() - JS object
+```
+
+class component - state, this.setState({}), componentDidMount(), componentDidUpdate(), componentWillUnMount()
+
+React 16.8 version onwards class component is discouraged, functional components are preferred.
+React Hooks was introduced for only functional components to get class component capabilities in functional components
+* useState() -- to declare state variable
+* useEffect() - lifecycle methods
+* useReducer() - prefer instead of useState() if conditionally mutate the state, mutation depends on previous state.
+
+React Context: to avoid props-drill
+Provider -> places data into Context
+Consumer -> gets data from Context
+* useContext() for Consumer
+
+-------
+
+react-router-dom: for SPA
+1) Different URls different Views has to be rendered
+2) Lazy loading of Components, lazy and Suspense
+3) MUI, bootstraps
+
+* useNavigate()
+* useParams()
+* useSearchParams()
+
+json-server to Fake RESTful WS.
+=========
+
+Day 3 and 4:
+* TypeScript
+* Pending hooks
+* Predictable State Managment
+
+memoization or memoisation is an optimization technique used primarily to speed up computer programs by storing the results of expensive calls to pure functions and returning the cached result when the same inputs occur again. 
+
+HOF: 
+* function taking function as argument
+* function returning function 
+
+* memo() HOC
+* useCallback() to memoize function defintion
+
+
