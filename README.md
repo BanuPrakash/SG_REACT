@@ -510,3 +510,52 @@ https://github.com/DefinitelyTyped/DefinitelyTyped
 
 ==========
 
+Predictable State Management
+
+Context: for Statemanagement in case of small applications, not designed for state mangement.
+
+React -> Unidirectional data flow
+MVC architectural pattern - Model View Controller 
+
+Flux Architecture -> Unidirectional data flow
+
+Redux
+1) Store --> A Single Store per application - Single Source of Truth
+2) Reducers - functions takes state and action -> returns new state
+3) Root Reducer -> combines reducers
+
+Bridge: react-redux
+
+{
+    "cart": {
+        "cartItems": [],
+        total: 0,
+        quantity: 0
+    },
+    "profile": {
+        "avatar": "banu.png",
+        "name": "Banu Prakash"
+    }
+}
+
+// state is from redux store
+function mapDispatchToProps(dispatch) {
+    return {
+        "addToCart": item => dispatch({"ADD_TO_CART", payload: item}),
+        "clear": () -> dispatch({"CLEAR_CART"})
+    }
+}
+
+connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(App)
+
+
+props.addToCart({..})
+
+props.clearCart();
+
+https://immutable-js.com/
+https://immerjs.github.io/immer/
+https://autodux.in/
