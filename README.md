@@ -432,11 +432,81 @@ tsc --init
  "noEmitOnError": true,
 
  =======
-
+ 1) string
+ 2) number
+ 3) boolean
  4) any
  5) unknown
  6) type
  to define the shape of object
 7) infer
-8) generic function
+
+8) interface
+9) generic function
+10) typepredicate
+11) typeassertion
+12) index signature
+13) keyof
+14) using JS in TS
+15) class type
+16) decorators
+...
+
+interface can be used instead of 'type' to declare a shape of object.
+
+```
+    type Product = {
+        id: number,
+        name: string
+    }
+    interface Product {
+        id: number,
+        name: string
+    }
+
+```
+interface can be extended
+
+```
+ interface Mobile extends Product {
+    connectivity: string,
+    camera: string
+ }
+
+```
+
+interface can be used for realization relationship
+
+```
+    interface Renderer {
+        render(): JSX;
+    }
+
+    class TvRenderer implements Renderer {
+        ...
+        render() : JSX {
+
+        }
+    }
+
+    class DomRenderer implements Renderer {
+        ...
+        render() : JSX {
+
+        }
+    }
+```
+
+====================
+
+Using JS in TypeScript
+
+npm i underscore
+https://github.com/DefinitelyTyped/DefinitelyTyped
+
+@types/react
+@types/underscore
+@types/node
+
+==========
 
