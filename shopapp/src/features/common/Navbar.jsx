@@ -24,7 +24,10 @@ export default function Navbar() {
         Form &nbsp;&nbsp;
       </Link>
        <Link to='/parent' style={{textDecoration:'none', color:'white', paddingRight:'10px'}}>
-        Parent
+        Parent &nbsp;&nbsp;
+      </Link>
+        <Link to='/slow' style={{textDecoration:'none', color:'white', paddingRight:'10px'}}>
+        Slow &nbsp;&nbsp;
       </Link>
     </Typography>
   </Toolbar>

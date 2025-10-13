@@ -6,6 +6,7 @@ import CartRow from './CartRow'
 
 export default function Cart() {
   let {cartItems, total, clearCart} = useContext(CartContext);
+ 
   return (
 
     <div className='container'>

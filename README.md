@@ -382,4 +382,61 @@ HOF:
 * memo() HOC
 * useCallback() to memoize function defintion
 
+=============
+
+Upto React 17 rendering was stack based.
+Old cold:
+render(<App/>, document.getElementById("root"))
+React 18 made Fiber Architecture as the default mechanism for rendering
+New Code:
+createRoot(document.getElementById('root')).render(<App/>);
+
+```
+export default function App() {
+    let [count, setCount] = useState(10);
+    return <div>
+            <h1> Count: {count}</h1>
+            <button onClick={()=>setCount(count+1)}> + </button>
+    </div>
+}
+
+```
+
+* useDefferedValue() to preempt.
+* useMemo() check this vs memo();
+
+==============================================
+
+TypeScript
+* statically typed language
+* Detect errors are compilation time rather than at runtime
+* Documentation
+* Better tooling
+
+tsworkspace> npm init --y
+tsworkspace> npm i typescript
+installs tsc and types defintions
+
+=====
+Basic types:
+1) string
+2) number
+3) boolean
+
+===
+
+tsc --init
+ rootDir,
+ outDir,
+ include,
+ "noEmitOnError": true,
+
+ =======
+
+ 4) any
+ 5) unknown
+ 6) type
+ to define the shape of object
+7) infer
+8) generic function
 
