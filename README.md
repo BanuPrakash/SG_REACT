@@ -660,3 +660,10 @@ https://redux.js.org/tutorials/fundamentals/part-6-async-logic
 * ObservableJS
 
 Redux Toolkit configures Thunk library outof box.
+
+RTK Query.
+
+-> better api for fetching - caching, polling, pre-fetching [ infiite scrolling], mutation,.. 
+
+
+createApi is the core of RTK Query's functionality.

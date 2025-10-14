@@ -32,6 +32,9 @@ export default function Navbar() {
         <Link to='/slow' style={{textDecoration:'none', color:'white', paddingRight:'10px'}}>
         Slow &nbsp;&nbsp;
       </Link>
+       <Link to='/customers' style={{textDecoration:'none', color:'white', paddingRight:'10px'}}>
+        Customer &nbsp;&nbsp;
+      </Link>
     </Typography>
   </Toolbar>
 </AppBar>

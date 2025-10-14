@@ -1,0 +1,20 @@
+{
+  "customers": [
+    {
+      "id": "1",
+      "name": "John Doe"
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith"
+    },
+    {
+      "id": "fc19",
+      "name": "Tim"
+    },
+    {
+      "id": "9eb3",
+      "name": "Roger"
+    }
+  ]
+}

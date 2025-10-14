@@ -9,6 +9,7 @@ import { Suspense } from 'react'
 import ProductForm from './features/products/ProductForm'
 import ParentComponent from './trials/ParentComponent'
 import SlowApp from './fiber/SlowApp'
+import CustomerList from './features/customer/CustomerList'
 
 // lazy loading
 const Cart = lazy (() => import('./features/cart/Cart'));
@@ -34,6 +35,7 @@ function App() {
           <Route path='/form' element={<ProductForm />}></Route> 
            <Route path='/parent' element={<ParentComponent />}></Route> 
            <Route path='/slow' element={<SlowApp />}></Route> 
+           <Route path='/customers' element={<CustomerList />}></Route> 
         <Route path='/' element={<ProductList />}></Route> 
         <Route path='*' element={<Default />}></Route> 
       </Routes>
