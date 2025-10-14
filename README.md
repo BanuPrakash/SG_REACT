@@ -559,3 +559,43 @@ props.clearCart();
 https://immutable-js.com/
 https://immerjs.github.io/immer/
 https://autodux.in/
+
+=======================
+
+Day 4:
+
+Recap of Day 3:
+1) useCallback
+2) memo
+3) useDefferedValue
+4) TypeScript
+5) Introduction to Redux
+* Store: place where state resides
+* Reducer: function which takes state for store, action from view; returns new state based on action type.
+* Root Reducer: locus between store and reducer
+react-redux: bridges react and redux
+connect(mapStateToProps, mapDispatchToProps)(App)
+
+
+Redux DevTool: Time travel debugging
+
+=========
+
+npm create vite@latest
+reduxexample
+react
+javascript
+
+Terminate Server
+reduxexample> npm i redux react-redux
+
+
+```
+div pollution
+Using Fragment instead of <div>
+<React.Fragment>
+
+</React.Fragment>
+
+React Fragment: <> </>
+``
