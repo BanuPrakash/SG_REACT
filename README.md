@@ -598,4 +598,28 @@ Using Fragment instead of <div>
 </React.Fragment>
 
 React Fragment: <> </>
-``
+```
+
+Redux Toolkit:
+npm install @reduxjs/toolkit
+useSelector() : The selector is approximately equivalent to the mapStateToProps argument to connect conceptually.
+
+let {avatar} = useSelector(state => state.profile.avatar);
+
+useDispatch() : quivalent to the mapDispatchToProps argument to connect conceptually.
+
+Migrate shopappts version to use Redux Toolkit instead of Contex for State Management
+
+============
+
+copy everything except node_modules into new project
+npm i 
+
+* Remove all references to Context 
+1) remove context folder
+2) remove reducers folder
+3) remove ref of Context in main.tsx
+4) Cart.jsx
+5) Navbar.jsx
+6) ProductCard.tsx
+
