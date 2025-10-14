@@ -2,12 +2,14 @@ import { configureStore } from "@reduxjs/toolkit";
 import profileReducer from './features/profileSlice'
 import cartReducer from './features/cartSlice';
 import { useDispatch, useSelector } from "react-redux";
+import productReducer from './features/productSlice';
 
 const store = configureStore({
     // root reducer no need for combineReducer
    reducer: {
      "profile": profileReducer,
-     "cart": cartReducer
+     "cart": cartReducer,
+     "products": productReducer
    },
 //    devTools: true
 });

@@ -649,3 +649,14 @@ dispatch(clear())
 dispatch(addToCart({id: 1, title: '..', amount: price, ...}))
 
 ```
+
+Redux is Synchronous:
+View -> dispatch action -> store -> root reducer -> reducer -> returned state -> store -> store updates the state.
+
+Async logic in Redux:
+https://redux.js.org/tutorials/fundamentals/part-6-async-logic
+* Thunk 
+* Saga
+* ObservableJS
+
+Redux Toolkit configures Thunk library outof box.
