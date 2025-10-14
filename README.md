@@ -623,3 +623,29 @@ npm i
 5) Navbar.jsx
 6) ProductCard.tsx
 
+npm install @reduxjs/toolkit react-redux
+
+createSlice 
+
+```
+
+const counterSlice = createSlice({
+  name: 'counter',
+  initialState: {count: 0},
+  reducers: {
+    increment: (state, action) => state.count + action.payload,
+    decrement: (state) => state.count - 1,
+    clear: (state) => state.count = 0 
+  },
+})
+
+
+dispatch(increment(10))
+
+dispatch(decrement())
+
+dispatch(clear())
+
+dispatch(addToCart({id: 1, title: '..', amount: price, ...}))
+
+```
