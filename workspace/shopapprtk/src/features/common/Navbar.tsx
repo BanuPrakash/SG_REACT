@@ -4,11 +4,14 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import { Link } from 'react-router-dom';
 import Badge from '@mui/material/Badge';
-import { useContext } from 'react';
+
+import { useSelector } from 'react-redux';
+import { useAppSelector } from '../../redux/store';
 
 
 export default function Navbar() {
-
+  // let {quantity} = useSelector(state => state.cart);
+  let {quantity} = useAppSelector(state => state.cart)
   return (
   <AppBar position="static">
   <Toolbar variant="dense">
@@ -18,7 +21,7 @@ export default function Navbar() {
       </Link>
     <Link to='/cart' style={{textDecoration:'none', color:'white', paddingRight:'10px'}}>
         Cart &nbsp;&nbsp;
-        <Badge badgeContent={0} />
+        <Badge badgeContent={quantity} />
       </Link>
        <Link to='/form' style={{textDecoration:'none', color:'white', paddingRight:'10px'}}>
         Form &nbsp;&nbsp;
