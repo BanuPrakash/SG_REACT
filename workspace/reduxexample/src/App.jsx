@@ -2,12 +2,6 @@ import { connect } from "react-redux";
 
 // props coming from connect
 function App(props) {
-   
-  // uncontrolled component
-    // function handleSubmit(evt) {
-      // evt.preventDefault()
-      // var formData = new FormData(evt.target);
-    
     function handleSubmit(formData) {
       let contact = {
         name: formData.get("name"),
@@ -50,3 +44,4 @@ export default connect(
   mapStateToProps,
   mapDispatchToProps
 )(App);
+

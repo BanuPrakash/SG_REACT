@@ -11,3 +11,4 @@ export default function contactReducer(state = [], action) {
             return state;
     }
 }
+
